@@ -1,0 +1,156 @@
+# List of global tags:
+# %nl% - Goes to new line.
+# %username% - Replaces the username of the player receiving the message.
+# %displayname% - Replaces the nickname (and colors) of the player receiving the message.
+
+# Registration
+registration:
+  register_request: '&3次のコマンドでサーバーに登録してください: /register <パスワード> <パスワードを認証する>'
+  command_usage: '&c使用法: /register <パスワード> <パスワードを認証する>'
+  reg_only: '&4登録ユーザーのみがサーバーに参加できます！登録するには、&7https://mc.&dmagic&acraft&7.jp&4 にアクセスしてください。'
+  kicked_admin_registered: '管理者があなたを登録しました。再入会してください。'
+  success: '&2無事登録完了！'
+  disabled: '&cゲーム内登録は無効です！'
+  name_taken: '&cこのユーザー名は既に登録されています。'
+
+# Password errors on registration
+password:
+  match_error: '&cパスワードが間違っています。再度確認してください。'
+  name_in_password: '&cあなたの名前をパスワードとして使用することはできません。別のパスワードを選択してください...'
+  unsafe_password: '&c選択したパスワードは安全ではありません。別のパスワードを選択してください...'
+  forbidden_characters: '&4パスワードに使用できない文字が含まれています。使用できる文字: %valid_chars'
+  wrong_length: '&cパスワードが短すぎるか長すぎます!他のことを試してみてください！'
+
+# Login
+login:
+  command_usage: '&c使用法: /login <パスワード>'
+  wrong_password: '&c間違ったパスワード！'
+  success: '&2ログイン成功！'
+  login_request: '&c次のコマンドでログインしてください: /login <パスワード>'
+  timeout_error: '&4ログイン タイムアウトを超えました。サーバーから追い出されました。もう一度お試しください。'
+
+# Errors
+error:
+  unregistered_user: '&cこのユーザーは登録されていません!'
+  denied_command: '&cこのコマンドを使用するには、ログインする必要があります。'
+  denied_chat: '&cチャットに書き込むにはログインする必要があります。'
+  not_logged_in: '&cあなたはログインしていません！'
+  tempban_max_logins: '&c何度もログインに失敗したため、一時的にアクセスを禁止されました。'
+  max_registration: '&c登録された接続の最大数 (%reg_count/%max_acc %reg_names) を超えました!'
+  no_permission: '&4このアクションを実行する権限がありません!'
+  unexpected_error: '&4予期しないエラーが発生しました。サーバー管理者に連絡してください。'
+  kick_for_vip: '&3サーバーがいっぱいになったときに、VIP プレイヤーがサーバーに参加しました。'
+  logged_in: '&cあなたは既にログインしています！'
+  kick_unresolved_hostname: '&cエラーが発生しました: プレイヤーのホスト名が解決されていません!'
+
+# AntiBot
+antibot:
+  kick_antibot: 'AntiBot 保護モードが有効です!サーバーに参加する前に、数分待つ必要があります。'
+  auto_enabled: '&4&7&l&k|&4アンチボットサービス&7&l&k|&4 接続数が多いからアンチボット対応！'
+  auto_disabled: '&2&7&l&k|&4アンチボットサービス&7&l&k|&2 %m 分後に AntiBot が無効になりました!'
+
+unregister:
+  success: '&c登録解除に成功しました！'
+  command_usage: '&c使用法: /unregister <パスワード>'
+
+# Other messages
+misc:
+  accounts_owned_self: '%count 個のアカウントがあります:'
+  accounts_owned_other: 'プレイヤー %name には %count アカウントがあります:'
+  account_not_activated: '&cあなたのアカウントはまだ有効化されていません。メールを確認してください。'
+  password_changed: '&2パスワードは正常に変更されました！'
+  logout: '&2ログアウトしました！'
+  reload: '&2構成とデータベースが正常に再ロードされました!'
+  usage_change_password: '&c使用法: /changepassword <以前のパスワード> <新しいパスワード>'
+
+# Session messages
+session:
+  invalid_session: '&cIP が変更され、セッション データの有効期限が切れています。'
+  valid_session: '&2セッションの再接続によりログインしました。'
+
+# Error messages when joining
+on_join_validation:
+  name_length: '&4ユーザー名が短すぎるか長すぎます。'
+  characters_in_name: '&4ユーザー名に使用できない文字が含まれています。使用できる文字: %valid_chars'
+  country_banned: '&4あなたの国はこのサーバーから禁止されています!'
+  not_owner_error: 'あなたはこのアカウントの所有者ではありません。別の名前を選択してください。'
+  kick_full_server: '&4サーバーがいっぱいです。後でもう一度やり直してください。'
+  same_nick_online: '&4同じユーザー名がサーバーで既にプレイされています!'
+  invalid_name_case: '%invalid ではなく、%valid のユーザー名で参加する必要があります。'
+  same_ip_online: '同じ IP を持つプレイヤーが既にゲームに参加しています!'
+  quick_command: 'コマンドの使用が速すぎます。サーバーに再度参加し、コマンドを使用する前にさらに待機してください。'
+
+# Email
+email:
+  usage_email_add: '&c使用法: /email add <いメール> <いメール確認>'
+  usage_email_change: '&c使用法: /email change <古いメール> <新しいメール>'
+  new_email_invalid: '&c新しいメールは無効です。もう一度お試しください。'
+  old_email_invalid: '&c古い電子メールが無効です。もう一度お試しください。'
+  invalid: '&c無効なメールアドレス。もう一度お試しください。'
+  added: '&2メールアドレスがアカウントに追加されました!'
+  request_confirmation: '&cあなたのメールアドレスを確認してください！'
+  changed: '&2あなたのメールアドレスが正常に変更されました！'
+  email_show: '&2あなたの現在のメールアドレスは次のとおりです: &f%email'
+  incomplete_settings: 'エラー: メール送信に必要なすべての設定が行われていません。サーバー管理者に連絡してください。'
+  already_used: '&4メールアドレスは既に使用されています'
+  send_failure: 'メールを送信できませんでした。サーバー管理者に連絡してください。'
+  no_email_for_account: '&2現在、このアカウントに関連付けられている電子メール アドレスはありません。'
+  add_email_request: '&3次のコマンドを使用してアカウントに電子メールを追加してください: /email add <あなたのメール> <いメール確認>'
+  change_password_expired: 'このコマンドを使用してパスワードを変更することはできなくなりました。'
+  email_cooldown_error: '&cメールは最近すでに送信されています。新しいものを送信する前に %time 待つ必要があります。'
+  add_not_allowed: '&cメールの追加は許可されていません。'
+  change_not_allowed: '&c電子メールの変更は許可されていません。'
+
+# Password recovery by email
+recovery:
+  forgot_password_hint: '&3パスワードを忘れた？コマンドを使用: /email recovery <あなたのメール>'
+  command_usage: '&c使用法: /email recovery <いメール>'
+  email_sent: '&2回復メールは正常に送信されました。メールの受信トレイを確認してください。'
+  code:
+    code_sent: 'パスワードをリセットするためのリカバリ コードがメールに送信されました。'
+    incorrect: 'リカバリーコードが正しくありません! %count 回の試行が残っています。'
+    tries_exceeded: 'リカバリ コードの入力試行回数が上限を超えました。 "/email recovery [いメール]" を使用して、新しいものを生成します。'
+    correct: 'リカバリーコードの入力に成功しました!'
+    change_password: 'コマンド /email setpassword <新しいパスワード> を使用して、すぐにパスワードを変更してください。'
+
+# Captcha
+captcha:
+  usage_captcha: '&3ログインするには、キャプチャ コードを解決する必要があります。次のコマンドを使用します: /captcha %captcha_code'
+  wrong_captcha: '&c間違ったキャプチャ。チャットで "/captcha %captcha_code" と入力します。'
+  valid_captcha: '&2キャプチャ コードが正しく解決されました。'
+  captcha_for_registration: '登録するには、まずキャプチャを解決する必要があります。次のコマンドを使用します: /captcha %captcha_code'
+  register_captcha_valid: '&2有効なキャプチャ！ /register で登録できるようになりました'
+
+# Verification code
+verification:
+  code_required: '&3このコマンドは機密性が高く、電子メールによる確認が必要です。受信トレイを確認し、メールの指示に従います。'
+  command_usage: '&c使用法： /verification <コード>'
+  incorrect_code: '&cコードが正しくありません。メールで受け取ったコードを使用して、チャットで "/verification <コード>" を入力します'
+  success: '&2あなたの身元が確認されました！現在のセッション内ですべてのコマンドを実行できるようになりました!'
+  already_verified: '&2現在のセッション内のすべての機密コマンドをすでに実行できます。'
+  code_expired: '&3コードの有効期限が切れています!別の機密コマンドを実行して、新しいコードを取得してください!'
+  email_needed: '&3本人確認を行うには、メールアドレスをアカウントにリンクする必要があります!!'
+
+# Two-factor authentication
+two_factor:
+  code_created: '&2あなたの秘密のコードは %code です。ここからスキャンできます %url'
+  confirmation_required: '/2fa confirm <コード> でコードを確認してください'
+  code_required: '/2fa code <コード> を含む 2 要素認証コードを送信する'
+  already_enabled: 'アカウントで2要素認証はすでに有効になっています!'
+  enable_error_no_code: '2fa キーが生成されていないか、有効期限が切れています。実行 /2fa add'
+  enable_success: 'アカウントの2要素認証が正常に有効になりました'
+  enable_error_wrong_code: '間違ったコードまたはコードの有効期限が切れています。実行 /2fa add'
+  not_enabled_error: 'アカウントで 2 要素認証が有効になっていません。 /2fa add を実行'
+  removed_success: 'アカウントから 2 要素認証が正常に削除されました'
+  invalid_code: '無効なコード！'
+
+# Time units
+time:
+  second: '秒'
+  seconds: '秒'
+  minute: '分'
+  minutes: '分'
+  hour: '時'
+  hours: '時'
+  day: '日'
+  days: '日'

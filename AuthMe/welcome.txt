@@ -1,0 +1,3 @@
+{PLAYER} を {SERVER} サーバーにようこそ
+
+このサーバーは AuthMeReloaded 保護を使用しています!
